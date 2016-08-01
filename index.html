@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Richard Jones">
+	<meta name="description" content="I'm Richard Jones, an undergraduate software engineer">
+	<meta name="keywords" content="Richard, Richard Jones, rj93, developer, software engineer">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="revisit-after" content="7 days">
+
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/website.css">
+	<link rel="stylesheet" href="./fonts/font-awesome/css/font-awesome.min.css">
+
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<!-- <script type="text/javascript" src="./js/typed.min.js"></script> -->
+	<script type="text/javascript" src="./js/typed.js"></script>
+	<script type="text/javascript" src="./js/particles.min.js"></script>
+	<script type="text/javascript" src="./js/website.js"></script>
+
+	<title>richardjones</title>
+
+	
+</head>
+	
+
+<body>
+	<div id="particles-js"></div>
+
+	<section id="intro">
+		<div class="brand">
+			<span class="typed-brand"></span>
+		</div>
+	</section>
+
+	<section id="profile"></section>
+	<section id="education"></section>
+	<section id="work"></section>
+	<section id="abilites"></section>
+
+	<section id="footer">
+		<div class="container">
+			<h2>Find me on</h2>
+			
+			<div id="logos">
+				<span class="linkedin">
+					<a href="https://www.linkedin.com/in/richjones93">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+						<p>LinkedIn</p>
+					</a>
+				</span>
+				
+				<span class="github">
+					<a href="https://github.com/rj93">
+						<i class="fa fa-github" aria-hidden="true"></i>
+						<p>GitHub</p>
+					</a>
+				</span>
+
+				<span class="email">
+					<a href="mailto:contact@richardjones.io">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						<p>Email</p>
+					</a>
+				</span>
+			</div>
+
+		</div>
+	</section>
+
+<script>
+  $(function(){
+	  $(".typed-brand").typed({
+		strings: ["hello, world.", "hello, i'm a tinkerer.", "hello, i'm a software engineer.", "hello, i'm richard."],
+		// time before backspacing
+		backDelay: 1000,
+		// false = infinite
+		loopCount: false,
+		// show cursor
+		showCursor: true,
+		// character for cursor
+		cursorChar: "|"
+	  });
+  });
+</script>
+
+<script type="text/javascript">
+	/* ---- particles.js config ---- */
+	particlesJS("particles-js", {
+		"particles": {
+			"number": {
+				"value": 80,
+				"density": {
+					"enable": true,
+					"value_area": 800
+				}
+			},
+			"color": {
+				"value": "#ffffff"
+			},
+			"shape": {
+				"type": "circle",
+				"stroke": {
+					"width": 0,
+					"color": "#000000"
+				},
+				"polygon": {
+					"nb_sides": 5
+				},
+				"image": {
+					"src": "img/github.svg",
+					"width": 100,
+					"height": 100
+				}
+			},
+			"opacity": {
+				"value": 0.5,
+				"random": false,
+				"anim": {
+					"enable": false,
+					"speed": 1,
+					"opacity_min": 0.1,
+					"sync": false
+				}
+			},
+			"size": {
+				"value": 3,
+				"random": true,
+				"anim": {
+					"enable": false,
+					"speed": 40,
+					"size_min": 0.1,
+					"sync": false
+				}
+			},
+			"line_linked": {
+				"enable": true,
+				"distance": 150,
+				"color": "#ffffff",
+				"opacity": 0.4,
+				"width": 1
+			},
+			"move": {
+				"enable": true,
+				"speed": 6,
+				"direction": "none",
+				"random": false,
+				"straight": false,
+				"out_mode": "out",
+				"bounce": false,
+				"attract": {
+					"enable": false,
+					"rotateX": 600,
+					"rotateY": 1200
+				}
+			}
+		},
+		"interactivity": {
+			"detect_on": "canvas",
+			"events": {
+				"onhover": {
+					"enable": true,
+					"mode": "grab"
+				},
+				"onclick": {
+					"enable": true,
+					"mode": "push"
+				},
+				"resize": true
+			},
+			"modes": {
+				"grab": {
+					"distance": 140,
+					"line_linked": {
+					"opacity": 1
+					}
+				},
+				"bubble": {
+					"distance": 400,
+					"size": 40,
+					"duration": 2,
+					"opacity": 8,
+					"speed": 3
+				},
+				"repulse": {
+					"distance": 200,
+					"duration": 0.4
+				},
+				"push": {
+					"particles_nb": 4
+				},
+				"remove": {
+					"particles_nb": 2
+				}
+			}
+		},
+		"retina_detect": true
+	});
+</script>
+
+</body>
+
+</html>
