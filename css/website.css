@@ -11,6 +11,18 @@ section {
 	padding-right: 140px;
 }
 
+a, a:hover {
+	text-decoration: none;
+}
+a {
+	border-bottom: 1px dashed grey;
+    color: grey;
+}
+a:hover {
+	color: #f33446;
+	border-color: #f33446;
+}
+
 /* intro */
 #intro { 
 	width: 100%; 
@@ -41,6 +53,7 @@ section {
 }
 .brand span {
 	font-size: 3em;
+	color: #f3;
 }
 
 .intro-scroll {
@@ -52,6 +65,20 @@ section {
 	bottom: 0px; 
 	left: 0; 
 	right: 0;
+	-webkit-transition: color 0.5s ease-out;
+	-moz-transition: color 0.5s ease-out;
+	-ms-transition: color 0.5s ease-out;
+	-o-transition: color 0.5s ease-out;
+	transition: color 0.5s ease-out;
+}
+.intro-scroll:hover {
+	color: #f33446;
+	-webkit-transition: color 0s;
+	-moz-transition: color 0s;
+	-ms-transition: color 0s;
+	-o-transition: color 0s;
+	transition: color 0s;
+
 }
 .intro-scroll span {
 	position: absolute;
@@ -77,6 +104,8 @@ section {
 	opacity: 1;
 	-webkit-animation: blink 0.8s infinite;
 	-moz-animation: blink 0.8s infinite;
+	-ms-transition: blink 0.8s infinite;
+	-o-transition: blink 0.8s infinite;
 	animation: blink 0.8s infinite;
 }
 @keyframes blink{
@@ -95,19 +124,9 @@ section {
 	100% { opacity:1; }
 }
 
-
-
 /* profile */
 #profile {
 	text-align: center;
-}
-#profile hr {
-
-}
-#profile a {
-	border-bottom: 1px dashed grey;
-    text-decoration: none;
-    color: grey;
 }
 #profile-pic {
 	width: 12.5em;
@@ -136,6 +155,7 @@ section {
 #footer span a {
 	color: lightgray; 
 	text-decoration: none;
+	border-bottom: none;
 }
 #footer span a i { 
 	font-size: 3em;
@@ -208,7 +228,7 @@ section {
 	padding-top: 2em;
 }
 
-@media only screen and (max-width: 767px){
+@media (max-width: 767px){
 
 	.container {
 		padding-right: 40px;
