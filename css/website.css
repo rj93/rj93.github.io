@@ -1,25 +1,34 @@
 html, body { 
-	height: 100%; 
+	height: 100%;
+}
+
+section { 
+	padding: 5em 0 5em;
+}
+
+.container {
+	padding-left: 140px;
+	padding-right: 140px;
 }
 
 /* intro */
 #intro { 
 	width: 100%; 
 	height: 100%;
+	text-align: center; 
 }
 
 #particles-js {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: black;
+	background-color: #212121;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
 }
 
 .brand {
-	text-align: center; 
 	position: absolute; 
 	height: 110px;
 	margin: auto; 
@@ -35,12 +44,30 @@ html, body {
 	font-size: 3em;
 }
 
-#profile, #education, #work, #abilites, #contact { 
-	padding: 5em 0 5em;
+.intro-scroll {
+	cursor: pointer;
+	color: #ffffff;
+	z-index: 999;
+	position: absolute; 
+	margin: auto;
+	top: 94%; 
+	left: 0; 
+	bottom: 0; 
+	right: 0;
+	width: 75px;
+}
+.intro-scroll i {
+	animation-name: bounce;
+	animation-delay: 6s;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+ }
+ @keyframes bounce {
+    0%   {padding: 0em;}
+    50%  {padding: 0.8em;}
 }
 
- 
-/* typed.js */
 #typed-cursor{
 	opacity: 1;
 	-webkit-animation: blink 0.8s infinite;
@@ -63,12 +90,39 @@ html, body {
 	100% { opacity:1; }
 }
 
+
+
+/* profile */
+#profile {
+	text-align: center;
+}
+#profile hr {
+
+}
+#profile a {
+	border-bottom: 1px dashed grey;
+    text-decoration: none;
+    color: grey;
+}
+#profile-pic {
+	width: 12.5em;
+}
+#about-me {
+
+}
+
+ 
+
 /* footer */
 #footer {
 	background: whitesmoke;
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 50px;
+}
+#footer .container {
+	padding-left: 40px;
+	padding-right: 40px;
 }
 #footer span {
 	padding-right: 2.5em;
