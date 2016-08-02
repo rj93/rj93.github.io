@@ -39,29 +39,30 @@ section {
 	z-index: 999;
 	color: #ffffff;
 }
-
 .brand span {
 	font-size: 3em;
 }
 
 .intro-scroll {
 	cursor: pointer;
+	height:50px;
 	color: #ffffff;
-	z-index: 999;
-	position: absolute; 
 	margin: auto;
-	top: 94%; 
+}
+.intro-scroll span {
+	position: absolute;
+	bottom: 36px; 
 	left: 0; 
-	bottom: 0; 
 	right: 0;
-	width: 75px;
 }
 .intro-scroll i {
-	animation-name: bounce;
-	animation-delay: 6s;
-    animation-duration: 0.75s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+	-webkit-animation: bounce 0.75s linear 5.5s infinite;
+	-moz-animation: bounce 0.75s linear 5.5s infinite;
+	animation: bounce 0.75s linear 5.5s infinite;
+	position: absolute;
+	right: 0;
+	left: 0; 
+	bottom: 8px; 
  }
  @keyframes bounce {
     0%   {padding: 0em;}
