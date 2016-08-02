@@ -205,3 +205,12 @@ section {
 #logos {
 	padding-top: 2em;
 }
+
+@media only screen and (max-width: 767px){
+
+	.container {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+
+}
