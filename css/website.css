@@ -48,6 +48,10 @@ section {
 	height:50px;
 	color: #ffffff;
 	margin: auto;
+	position: absolute;
+	bottom: 0px; 
+	left: 0; 
+	right: 0;
 }
 .intro-scroll span {
 	position: absolute;
@@ -111,8 +115,6 @@ section {
 #about-me {
 
 }
-
- 
 
 /* footer */
 #footer {
