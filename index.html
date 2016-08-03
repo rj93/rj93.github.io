@@ -65,8 +65,129 @@
 
 
 	<section id="education">
-		<div class="container"></div>
+		<div class="container">
+			<h1>Education</h1>
+			<hr>
+			<div class="row">
+				<div class="col-md-4">
+					<h2>Cardiff University</h2>
+					<h3>BSc Computer Science</h3>
+					<h4>2013 - 2017</h4>
+				</div>
+				<div class="col-md-8">
+					<ul class="nav nav-pills">
+						<li role="presentation" class="active"><a data-toggle="pill" href="#year-one">Year One</a></li>
+						<li role="presentation" class=""><a data-toggle="pill" href="#year-two">Year Two</a></li>
+						<li role="presentation" class=""><a data-toggle="pill" href="#year-three">Year Three</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<div id="year-one" class="tab-pane fade in active">
+							<ul class="list-unstyled">
+								<li class="module">
+									<span class="module-title">Fundementals of Computing with Java</span>
+									<span class="module-mark">82%</span>
+								</li>
+								<li class="module">
+									<span class="module-title">Web Applications</span>
+									<span class="module-mark">82%</span>
+								</li>
+								<li class="module">
+									<span class="module-title">Problem Solving with Python</span>
+									<span class="module-mark">78%</span>
+								</li>
+								<li class="module hidden show-more">
+									<span class="module-title">Computational Thinking</span>
+									<span class="module-mark">76%</span>
+								</li>
+								<li class="module hidden show-more">
+									<span class="module-title">Developing Quality Software</span>
+									<span class="module-mark">75%</span>
+								</li>
+								<li class="module hidden show-more">
+									<span class="module-title">Professional Skills</span>
+									<span class="module-mark">75%</span>
+								</li>
+								<li class="module hidden show-more">
+									<span class="module-title">Architecture and Operating Systems</span>
+									<span class="module-mark">61%</span>
+								</li>
+							</ul>
+						</div>
+						<div id="year-two" class="tab-pane fade">
+							<ul class="list-unstyled">
+								<li class="module">
+									<span class="module-title">Object Oriented Programming</span>
+									<span class="module-mark">81%</span>
+								</li>
+								<li class="module">
+									<span class="module-title">Communication Netowrks and Pervasive Computing</span>
+									<span class="module-mark">81%</span>
+								</li>
+								<li class="module">
+									<span class="module-title">Algorithms and Data Structures</span>
+									<span class="module-mark">74%</span>
+								</li>
+								<li class="module hidden show-more">
+									<span class="module-title">System Design and Group Project</span>
+									<span class="module-mark">71%</span>
+								</li>
+								<li class="module hidden show-more">
+									<span class="module-title">Human Computer Interaction</span>
+									<span class="module-mark">66%</span>
+								</li>
+								<li class="module hidden show-more">
+									<span class="module-title">Database Systems</span>
+									<span class="module-mark">64%</span>
+								</li>
+								<li class="module hidden show-more">
+									<span class="module-title">Scientific Computing and Multimedia Applications</span>
+									<span class="module-mark">57%</span>
+								</li>
+							</ul>
+						</div>
+						<div id="year-three" class="tab-pane fade">
+							<ul class="list-unstyled">
+								<li class="module">
+									<span class="module-title">Artificial Intelligence</span>
+									<span class="module-mark hidden">%</span>
+								</li>
+								<li class="module">
+									<span class="module-title">High Performance Computing</span>
+									<span class="module-mark hidden">%</span>
+								</li>
+								<li class="module">
+									<span class="module-title">Combinatorial Optimisation</span>
+									<span class="module-mark hidden">%</span>
+								</li>
+								<li class="module hidden show-more">
+									<span class="module-title">Security</span>
+									<span class="module-mark hidden">%</span>
+								</li>
+								<li class="module hidden show-more">
+									<span class="module-title">Forensics</span>
+									<span class="module-mark hidden">%</span>
+								</li>
+								<li class="module hidden show-more">
+									<span class="module-title">Emerging Technologies</span>
+									<span class="module-mark hidden">%</span>
+								</li>
+								<li class="module hidden show-more">
+									<span class="module-title">Project</span>
+									<span class="module-mark hidden">%</span>
+								</li>
+							</ul>
+						</div>
+						<div class="show-buttons">
+							<button id="btn-show-more" onclick="showMore()">Show more <i class="fa fa-chevron-down"></i></button>
+							<button id="btn-show-less" onclick="showLess()" class="hidden">Show less <i class="fa fa-chevron-up"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
+
 	<section id="work">
 		<div class="container"></div>
 	</section>
@@ -103,145 +224,163 @@
 		</div>
 	</section>
 
-<script>
-  $(function(){
-	  $(".typed-brand").typed({
-		strings: ["hello, world.", "hello, i'm a software engineer.", "hello, i'm richard."],
-		// time before backspacing
-		backDelay: 1000,
-		// false = infinite
-		loopCount: false,
-		// show cursor
-		showCursor: true,
-		// character for cursor
-		cursorChar: "|"
-	  });
-  });
-</script>
+	
+	<script type="text/javascript">
+		
+		{	
+			// intro scroll to profile
+			$( ".intro-scroll" ).click(function() {
+				$('html, body').animate({
+					scrollTop: $("#profile").offset().top
+				}, 750);
+			});
 
-<script type="text/javascript">
-	$(function(){
-		$( ".intro-scroll" ).click(function() {
-			console.log("clicked");
-			$('html, body').animate({
-				scrollTop: $("#profile").offset().top
-			}, 750);
-		});
-	});
-</script>
-
-<script type="text/javascript">
-	/* ---- particles.js config ---- */
-	particlesJS("particles-js", {
-		"particles": {
-			"number": {
-				"value": 80,
-				"density": {
-					"enable": true,
-					"value_area": 800
-				}
-			},
-			"color": {
-				"value": "#f33446"
-			},
-			"shape": {
-				"type": "circle",
-				"stroke": {
-					"width": 0,
-					"color": "#000000"
-				},
-				"polygon": {
-					"nb_sides": 5
-				},
-				"image": {
-					"src": "img/github.svg",
-					"width": 100,
-					"height": 100
-				}
-			},
-			"opacity": {
-				"value": 0.5,
-				"random": false,
-				"anim": {
-					"enable": false,
-					"speed": 1,
-					"opacity_min": 0.1,
-					"sync": false
-				}
-			},
-			"size": {
-				"value": 3,
-				"random": true,
-				"anim": {
-					"enable": false,
-					"speed": 40,
-					"size_min": 0.1,
-					"sync": false
-				}
-			},
-			"line_linked": {
-				"enable": true,
-				"distance": 150,
-				"color": "#ffffff",
-				"opacity": 0.4,
-				"width": 1
-			},
-			"move": {
-				"enable": true,
-				"speed": 6,
-				"direction": "none",
-				"random": false,
-				"straight": false,
-				"out_mode": "out",
-				"bounce": false,
-				"attract": {
-					"enable": false,
-					"rotateX": 600,
-					"rotateY": 1200
-				}
+			// modules
+			//html body section#education div.container div.row div.col-md-8 div.tab-content div#year-one.tab-pane.fade.in.active ul.list-unstyled li.module.hidden.show-more
+			//html body section#education div.container div.row div.col-md-8 div.tab-content div.show-buttons button#btn-show-more
+			var showMore = function(){
+				$("li.show-more").removeClass("hidden");
+				$("#btn-show-more").addClass("hidden");
+				$("#btn-show-less").removeClass("hidden");
 			}
-		},
-		"interactivity": {
-			"detect_on": "canvas",
-			"events": {
-				"onhover": {
-					"enable": true,
-					"mode": "grab"
-				},
-				"onclick": {
-					"enable": false
-				},
-				"resize": true
-			},
-			"modes": {
-				"grab": {
-					"distance": 140,
-					"line_linked": {
-					"opacity": 1
+			var showLess = function(){
+				$("li.show-more").addClass("hidden");
+				$("#btn-show-more").removeClass("hidden");
+				$("#btn-show-less").addClass("hidden");
+			}
+		}
+	</script>
+
+	<!-- typed.js -->
+	<script>
+		$(function(){
+			$(".typed-brand").typed({
+				strings: ["hello, world.", "hello, i'm a software engineer.", "hello, i'm richard."],
+				// time before backspacing
+				backDelay: 1000,
+				// false = infinite
+				loopCount: false,
+				// show cursor
+				showCursor: true,
+				// character for cursor
+				cursorChar: "|"
+			});
+		});
+	</script>
+
+	<!-- praticle.js -->
+	<script type="text/javascript">
+		/* ---- particles.js config ---- */
+		particlesJS("particles-js", {
+			"particles": {
+				"number": {
+					"value": 80,
+					"density": {
+						"enable": true,
+						"value_area": 800
 					}
 				},
-				"bubble": {
-					"distance": 400,
-					"size": 40,
-					"duration": 2,
-					"opacity": 8,
-					"speed": 3
+				"color": {
+					"value": "#f33446"
 				},
-				"repulse": {
-					"distance": 200,
-					"duration": 0.4
+				"shape": {
+					"type": "circle",
+					"stroke": {
+						"width": 0,
+						"color": "#000000"
+					},
+					"polygon": {
+						"nb_sides": 5
+					},
+					"image": {
+						"src": "img/github.svg",
+						"width": 100,
+						"height": 100
+					}
 				},
-				"push": {
-					"particles_nb": 4
+				"opacity": {
+					"value": 0.5,
+					"random": false,
+					"anim": {
+						"enable": false,
+						"speed": 1,
+						"opacity_min": 0.1,
+						"sync": false
+					}
 				},
-				"remove": {
-					"particles_nb": 2
+				"size": {
+					"value": 3,
+					"random": true,
+					"anim": {
+						"enable": false,
+						"speed": 40,
+						"size_min": 0.1,
+						"sync": false
+					}
+				},
+				"line_linked": {
+					"enable": true,
+					"distance": 150,
+					"color": "#ffffff",
+					"opacity": 0.4,
+					"width": 1
+				},
+				"move": {
+					"enable": true,
+					"speed": 6,
+					"direction": "none",
+					"random": false,
+					"straight": false,
+					"out_mode": "out",
+					"bounce": false,
+					"attract": {
+						"enable": false,
+						"rotateX": 600,
+						"rotateY": 1200
+					}
 				}
-			}
-		},
-		"retina_detect": true
-	});
-</script>
+			},
+			"interactivity": {
+				"detect_on": "canvas",
+				"events": {
+					"onhover": {
+						"enable": true,
+						"mode": "grab"
+					},
+					"onclick": {
+						"enable": false
+					},
+					"resize": true
+				},
+				"modes": {
+					"grab": {
+						"distance": 140,
+						"line_linked": {
+						"opacity": 1
+						}
+					},
+					"bubble": {
+						"distance": 400,
+						"size": 40,
+						"duration": 2,
+						"opacity": 8,
+						"speed": 3
+					},
+					"repulse": {
+						"distance": 200,
+						"duration": 0.4
+					},
+					"push": {
+						"particles_nb": 4
+					},
+					"remove": {
+						"particles_nb": 2
+					}
+				}
+			},
+			"retina_detect": true
+		});
+	</script>
 
 </body>
 

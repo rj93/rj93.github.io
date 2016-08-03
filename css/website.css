@@ -135,6 +135,36 @@ a:hover {
 
 }
 
+/* education */
+#education .nav.nav-pills li {
+	width:33%;
+}
+#education .nav.nav-pills li a{
+	border-bottom: none;
+}
+#education .nav.nav-pills li.active a {
+	background-color: #f33446;
+}
+.module {
+	height: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.module-title {
+	display: inline-block;
+	white-space: ellipsis; 
+    width: 88%; 
+    overflow: hidden;
+    text-overflow: clip;
+}
+.module-mark {
+	/*display: block;*/
+	float: right !important;
+}
+#education button {
+	width: 100%;
+}
+
 /* footer */
 #footer {
 	background: whitesmoke;
@@ -234,5 +264,9 @@ a:hover {
 		padding-right: 40px;
 		padding-left: 40px;
 	}
+
+/*	#education {
+		text-align: center;
+	}*/
 
 }
