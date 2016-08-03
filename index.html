@@ -267,6 +267,68 @@
 				}, 750);
 			});
 
+			// module animations
+			function animateShowMore(element){
+				setTimeout(function(){
+					element.addClass("slide-in");
+					element.removeClass("hidden");
+				}, (element.index() - 3) * 50);
+				element.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+					element.removeClass("slide-in");
+				});
+			}
+
+			var years = ["year-one", "year-two", "year-three"];
+			var showMore = function(){
+
+				$("#btn-show-more").addClass("hidden");
+				$("#btn-show-less").removeClass("hidden");
+
+				var activeId = $(".tab-pane.active").attr('id');
+				$("#" + activeId + " li.show-more").each(function() {
+					// animateShowMore($(this));
+					var element = $(this);
+					// setTimeout(function(){
+						element.removeClass("hidden");
+						element.show(500, "linear", function(){
+							element.css("display", "");
+						});
+					// }, (element.index() -3) * 50);
+				});
+
+				// non active tabs don't need to be animated
+				for (var i = 0; i < years.length; i++){
+					var year = years[i];
+					if (year != activeId){
+						$("#" + year + " li.show-more").removeClass("hidden");
+					}
+				}
+
+			}
+			var showLess = function(){
+				$("#btn-show-more").removeClass("hidden");
+				$("#btn-show-less").addClass("hidden");
+
+				var activeId = $(".tab-pane.active").attr('id');
+				var index = 0;
+				$($("#" + activeId + " li.show-more").get().reverse()).each(function() {
+					var element = $(this);
+					setTimeout(function(){
+						element.hide(500, "linear", function(){
+							element.addClass("hidden");
+							element.css("display", "");
+						});
+					}, index * 50);
+					// setTimeout(function(){
+					// 	element.addClass("slide-out");
+					// }, index * 500);
+					// element.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+					// 	element.removeClass("slide-out").addClass("hidden");
+					// });
+					index++;
+				});
+			}
+
 		}
 	</script>
 
