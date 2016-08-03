@@ -267,6 +267,18 @@
 				}, 750);
 			});
 
+			// modules
+			var showMore = function(){
+				$("li.show-more").removeClass("hidden");
+				$("#btn-show-more").addClass("hidden");
+				$("#btn-show-less").removeClass("hidden");
+			}
+			var showLess = function(){
+				$("li.show-more").addClass("hidden");
+				$("#btn-show-more").removeClass("hidden");
+				$("#btn-show-less").addClass("hidden");
+			}
+
 		}
 	</script>
 
