@@ -68,7 +68,7 @@
 		<div class="container">
 			<h1>Education</h1>
 			<hr>
-			<div class="row">
+			<div id="uni" class="row">
 				<div class="col-md-4">
 					<h2>Cardiff University</h2>
 					<h3>BSc Computer Science</h3>
@@ -185,6 +185,38 @@
 					</div>
 				</div>
 			</div>
+			<div id="college" class="row">
+				<div class="col-md-4">
+					<h2>Yale College Wrexham</h2>
+					<h4>2010 - 2013</h4>
+				</div>
+				<div class="col-md-8">
+					<ul class="nav nav-pills">
+						<li role="presentation" class="active"><a data-toggle="pill" href="#year-one">A-Level</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<div id="year-one" class="tab-pane fade in active">
+							<ul class="list-unstyled">
+								<li class="module">
+									<span class="module-title">Computing</span>
+									<span class="module-mark">B</span>
+								</li>
+								<li class="module">
+									<span class="module-title">Mathematics</span>
+									<span class="module-mark">B</span>
+								</li>
+								<li class="module">
+									<span class="module-title">Chemistry</span>
+									<span class="module-mark">B</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="school" class="row">
+			</div>
 		</div>
 	</section>
 
@@ -235,19 +267,6 @@
 				}, 750);
 			});
 
-			// modules
-			//html body section#education div.container div.row div.col-md-8 div.tab-content div#year-one.tab-pane.fade.in.active ul.list-unstyled li.module.hidden.show-more
-			//html body section#education div.container div.row div.col-md-8 div.tab-content div.show-buttons button#btn-show-more
-			var showMore = function(){
-				$("li.show-more").removeClass("hidden");
-				$("#btn-show-more").addClass("hidden");
-				$("#btn-show-less").removeClass("hidden");
-			}
-			var showLess = function(){
-				$("li.show-more").addClass("hidden");
-				$("#btn-show-more").removeClass("hidden");
-				$("#btn-show-less").addClass("hidden");
-			}
 		}
 	</script>
 
