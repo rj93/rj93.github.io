@@ -12,7 +12,16 @@ html, body {
 }
 
 section { 
-	padding: 5em 0 5em;
+	padding-top: 2em;
+	padding-bottom: 4em;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+h3 {
+	font-size: 22px;
 }
 
 .container {
@@ -136,12 +145,28 @@ a:hover {
 /* profile */
 #profile {
 	text-align: center;
+	background-color: #ededed;
+}
+#profile hr {
+	border-color: #ffffff;
 }
 #profile-pic {
-	width: 12.5em;
+	width: 15em;
 }
 #about-me {
-
+	font-size: 16px;
+}
+#details {
+	text-align: left;
+}
+#details h4, #details h5 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+@media (max-width: 992px){
+	#details {
+		text-align: center;
+	}
 }
 
 /* education */
@@ -239,6 +264,21 @@ a:hover {
 }
 #education [type="checkbox"]:checked + label:after {
 	content: "\f077";
+}
+
+/* work */
+#work {
+	background-color: #e0e0e0;
+}
+#work hr {
+	border-color: #ffffff;
+}
+
+
+/* abilities */
+#abilities {
+	background-color: #363636;
+	color: #9c9c9c;
 }
 
 

@@ -52,13 +52,18 @@
 			</div>
 			<div class="col-xs-12 col-md-4 col-md-pull-4" id="about-me">
 				<h2>About me</h2>
-				A final year undergraduate at Cardiff Univeristy, studying towards a BSc in <a target="_blank" href="http://www.cardiff.ac.uk/study/undergraduate/courses/course/computer-science-with-a-year-in-industry-bsc">Computer Science</a>.
+				A final year undergraduate at Cardiff Univeristy, studying towards a BSc in <a target="_blank" href="http://www.cardiff.ac.uk/study/undergraduate/courses/course/computer-science-with-a-year-in-industry-bsc">Computer Science</a>. I am most proficient in Java, Python, and web development.
 			</div>
 			<div class="col-xs-12 col-md-4" id="details">
 				<h2>Details</h2>
-				Name: Richard Jones<br>
-				Age: 22<br>
-				Location: Cardiff, Wales, UK.
+				<div>
+					<h4>Name</h4>
+					<h5>Richard Jones</h5>
+					<h4>Age</h4>
+					<h5>22</h5>
+					<h4>Location</h4>
+					<h5>Cardiff, Wales, UK.</h5>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -73,6 +78,7 @@
 					<h2>Cardiff University</h2>
 					<h3>BSc Computer Science</h3>
 					<h4>2013 - 2017</h4>
+					<h5><i class="fa fa-map-marker"></i> Cardiff, Wales, UK</h5>
 				</div>
 				<div class="col-md-8">
 					<ul class="nav nav-pills">
@@ -199,10 +205,12 @@
 					</div>
 				</div>
 			</div>
+			<br><br>
 			<div id="college" class="row">
 				<div class="col-md-4">
 					<h2>Yale College Wrexham</h2>
 					<h4>2010 - 2013</h4>
+					<h5><i class="fa fa-map-marker"></i> Wrexham, Wales, UK</h5>
 				</div>
 				<div class="col-md-8">
 					<ul class="nav nav-pills">
@@ -233,6 +241,7 @@
 				<div class="col-md-4">
 					<h2>Ysgol-Y-Grango</h2>
 					<h4>2005 - 2010</h4>
+					<h5><i class="fa fa-map-marker"></i> Wrexham, Wales, UK</h5>
 				</div>
 				<div class="col-md-8">
 					<ul class="nav nav-pills">
@@ -297,10 +306,69 @@
 	</section>
 
 	<section id="work">
-		<div class="container"></div>
+		<div class="container">
+			<h1>Work</h1>
+			<hr>
+			<div id="job" class="row">
+				<div class="col-md-4">
+					<h2>Intern Software Engineer</h2>
+					<h3>Airbus Group</h3>
+					<h4>Jul 2015 - Jun 2016</h4>
+					<h5><i class="fa fa-map-marker"></i> Newport, Wales, UK</h5>
+				</div>
+				<div class="col-md-8">
+					<h4>Responsibilities</h4>
+					<ul>
+						<li>Implemented Gnip's product API's into an interanal Java library package</li>
+						<li>Implemented RESTful API web services using Java EE</li>
+						<li>Implemented unit tests wtih JUnit and Mockito</li>
+						<li>Designed a website using AngularJS</li>
+						<li>Assisted in the development of a big data analytical system</li>
+						<li>Deployed software packages to Amazon Web Services</li>
+						<li>Assisted in the running of research trails</li>
+						<li>Created Docker images for development environements</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</section>
-	<section id="abilites">
-		<div class="container"></div>
+
+	<section id="abilities">
+		<div class="container">
+			<h1>Abilities</h1>
+			<hr>
+			<div class="row">
+				<div id="skills" class="col-md-6">
+					<h2>Skills</h2>
+					<ul class="list-unstyled">
+						<li>Java</li>
+						<li>Python</li>
+						<li>HTML5, CSS3</li>
+						<li>Javascript</li>
+						<li>Angular</li>
+						<li>Matlab</li>
+						<li>PHP</li>
+						<li>SQL</li>
+						<li>C++</li>	
+					</ul>
+				</div>
+
+
+				<div id="tools"class="col-md-6">
+					<h2>Tools</h2>
+					<ul class="list-unstyled">
+						<li>Eclipse</li>
+						<li>Sublime Text</li>
+						<li>Git, SVN</li>
+						<li>JUnit, Mockito</li>
+						<li>Jenkins</li>
+						<li>Linux</li>
+						<li>Windows</li>
+						<li>OS X</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section id="footer">
@@ -343,24 +411,7 @@
 				}, 750);
 			});
 
-			// modules
-			var showMore = function(){
-				$("li.show-more").removeClass("hidden");
-				$("#btn-show-more").addClass("hidden");
-				$("#btn-show-less").removeClass("hidden");
-			}
-			var showLess = function(){
-				$("li.show-more").addClass("hidden");
-				$("#btn-show-more").removeClass("hidden");
-				$("#btn-show-less").addClass("hidden");
-			}
-
-		}
-	</script>
-
-	<!-- typed.js -->
-	<script>
-		$(function(){
+			// typed.js
 			$(".typed-brand").typed({
 				strings: ["hello, world.", "hello, i'm a software engineer.", "hello, i'm richard."],
 				// time before backspacing
@@ -372,8 +423,10 @@
 				// character for cursor
 				cursorChar: "|"
 			});
-		});
+
+		}
 	</script>
+
 
 	<!-- praticle.js -->
 	<script type="text/javascript">
